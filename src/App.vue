@@ -5,39 +5,76 @@ import countries from './data/countries.json'
 import ListComponent from './components/autocomplete/ListComponent.vue'
 import { type CountryModel } from './models/CountryModel'
 
+// Imagine a function to handle selections from input 2, which is sync in this case
 const selectedCountries = ref<CountryModel[]>([])
 
-const toggleCountries = (country: { name: string }) => {
+/**
+ * Adds or remove a country from the non async selected list
+ * @param country country to be toggled for the non async selecton
+ */
+const toggleCountries = (country: CountryModel) => {
   if (selectedCountries.value.map((country) => country.name).includes(country.name)) {
     selectedCountries.value = selectedCountries.value.filter((c) => c.name !== country.name)
     return
   }
   selectedCountries.value.push(country)
 }
+
+// This is a function to handle selections from input 1, which is async in this case
+const selectedCountriesAsync = ref<CountryModel[]>([])
+
+/**
+ * Adds or remove a country from the async selected list
+ * @param country country to be toggled for the async selecton
+ */
+const toggleCountriesAsync = (country: CountryModel) => {
+  if (selectedCountriesAsync.value.map((country) => country.name).includes(country.name)) {
+    selectedCountriesAsync.value = selectedCountriesAsync.value.filter(
+      (c) => c.name !== country.name
+    )
+    return
+  }
+  selectedCountriesAsync.value.push(country)
+}
 </script>
 
 <template>
-  <div class="flex flex-col gap-2">
-    <AutoComplete :label="'Async auto complete'" :source="countries">
-      <template #list-component="{ source }">
-        <!-- Any component can go here -->
+  <div class="flex flex-col gap-4 bg-white p-8 rounded-lg max-w-[500px]">
+    <AutoComplete
+      :label="'Async auto complete'"
+      :source="countries"
+      :selectedArr="selectedCountriesAsync"
+      :toggleFromList="toggleCountriesAsync"
+      :isAsync="true"
+      placeholder="Type to begin searching"
+      :isDisabled="false"
+    >
+      <template #list-component="{ source, isActive, isHighlighted }">
         <ListComponent
           :source="source"
-          :toggleFromList="toggleCountries"
+          :toggleFromList="toggleCountriesAsync"
+          :isActive="isActive"
+          :isHighlighted="isHighlighted"
         />
       </template>
     </AutoComplete>
-    <AutoComplete :label="'Sync auto complete'" :source="countries">
-      <template #list-component="{ source }">
-        <!-- Any component can go here -->
+    <AutoComplete
+      :label="'Sync auto complete'"
+      :source="countries"
+      :selectedArr="selectedCountries"
+      :toggleFromList="toggleCountries"
+      :isAsync="false"
+      placeholder="Type to begin searching"
+      :isDisabled="false"
+    >
+      <template #list-component="{ source, isActive, isHighlighted }">
         <ListComponent
           :source="source"
           :toggleFromList="toggleCountries"
+          :isActive="isActive"
+          :isHighlighted="isHighlighted"
         />
       </template>
     </AutoComplete>
-    <div v-for="country in selectedCountries" :key="country.name">{{ country }}</div>
   </div>
 </template>
-
-<style scoped></style>

@@ -1,3 +1,3 @@
 export type CountryModel = {
-  name: string;
+  name: string
 }

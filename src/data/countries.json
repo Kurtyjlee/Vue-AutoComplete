@@ -1,125 +1,167 @@
 [
   {
-    "name": "Albania"
+    "name": "Albania",
+    "random": {
+      "key": "value",
+      "key2": "value2",
+      "random2": {
+        "key": "value",
+        "key2": "value2"
+      }
+    }
   },
   {
-    "name": "Andorra"
+    "name": "Andorra",
+    "random": {
+      "key": "value",
+      "key2": "value2",
+      "random2": {
+        "key": "value",
+        "key2": "value2"
+      }
+    }
   },
   {
-    "name": "Austria"
+    "name": "Austria",
+    "random": {
+      "key": "value",
+      "key2": "value2",
+      "random2": {
+        "key": "value",
+        "key2": "value2"
+      }
+    }
   },
   {
-    "name": "Belarus"
+    "name": "Belarus",
+    "random": {
+      "key": "value",
+      "key2": "value2",
+      "random2": {
+        "key": "value",
+        "key2": "value2"
+      }
+    }
   },
   {
-    "name": "Belgium"
+    "name": "Belgium",
+    "random": {
+      "key": "value",
+      "key2": "value2",
+      "random2": {
+        "key": "value",
+        "key2": "value2"
+      }
+    }
   },
   {
-    "name": "Bosnia and Herzegovina"
+    "name": "Bosnia and Herzegovina",
+    "random": {
+      "key": "value",
+      "key2": "value2",
+      "random2": {
+        "key": "value",
+        "key2": "value2"
+      }
+    }
   },
   {
-    "name": "Bulgaria"
+    "name": "Bulgaria",
+    "random": {
+      "key": "value",
+      "key2": "value2",
+      "random2": {
+        "key": "value",
+        "key2": "value2"
+      }
+    }
   },
   {
-    "name": "Croatia"
+    "name": "Croatia",
+    "random": {
+      "key": "value",
+      "key2": "value2",
+      "random2": {
+        "key": "value",
+        "key2": "value2"
+      }
+    }
   },
   {
-    "name": "Cyprus"
+    "name": "Cyprus",
+    "random": {
+      "key": "value",
+      "key2": "value2",
+      "random2": {
+        "key": "value",
+        "key2": "value2"
+      }
+    }
   },
   {
-    "name": "Czech Republic"
+    "name": "Czech Republic",
+    "random": {
+      "key": "value",
+      "key2": "value2",
+      "random2": {
+        "key": "value",
+        "key2": "value2"
+      }
+    }
   },
   {
-    "name": "Denmark"
+    "name": "Denmark",
+    "random": {
+      "key": "value",
+      "key2": "value2",
+      "random2": {
+        "key": "value",
+        "key2": "value2"
+      }
+    }
   },
   {
-    "name": "Estonia"
+    "name": "Estonia",
+    "random": {
+      "key": "value",
+      "key2": "value2",
+      "random2": {
+        "key": "value",
+        "key2": "value2"
+      }
+    }
   },
   {
-    "name": "Finland"
+    "name": "Finland",
+    "random": {
+      "key": "value",
+      "key2": "value2",
+      "random2": {
+        "key": "value",
+        "key2": "value2"
+      }
+    }
   },
   {
-    "name": "France"
+    "name": "France",
+    "random": {
+      "key": "value",
+      "key2": "value2",
+      "random2": {
+        "key": "value",
+        "key2": "value2"
+      }
+    }
   },
   {
-    "name": "Germany"
-  },
-  {
-    "name": "Greece"
-  },
-  {
-    "name": "Hungary"
-  },
-  {
-    "name": "Iceland"
-  },
-  {
-    "name": "Ireland"
-  },
-  {
-    "name": "Italy"
-  },
-  {
-    "name": "Kosovo"
-  },
-  {
-    "name": "Latvia"
-  },
-  {
-    "name": "Liechtenstein"
-  },
-  {
-    "name": "Lithuania"
-  },
-  {
-    "name": "Luxembourg"
-  },
-  {
-    "name": "Macedonia"
-  },
-  {
-    "name": "Malta"
-  },
-  {
-    "name": "Moldova"
-  },
-  {
-    "name": "Monaco"
-  },
-  {
-    "name": "Montenegro"
-  },
-  {
-    "name": "Netherlands"
-  },
-  {
-    "name": "Norway"
-  },
-  {
-    "name": "Poland"
-  },
-  {
-    "name": "Portugal"
-  },
-  {
-    "name": "Romania"
-  },
-  {
-    "name": "Russia"
-  },
-  {
-    "name": "San Marino"
-  },
-  {
-    "name": "Serbia"
-  },
-  {
-    "name": "Slovakia"
-  },
-  {
-    "name": "Slovenia"
-  },
-  {
-    "name": "Spain"
+    "name": "Spain",
+    "random": {
+      "key": "value",
+      "key2": "value2",
+      "random2": {
+        "key": "value",
+        "key2": "value2"
+      }
+    }
   }
 ]
