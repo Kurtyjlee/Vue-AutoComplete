@@ -39,42 +39,44 @@ const toggleCountriesAsync = (country: CountryModel) => {
 </script>
 
 <template>
-  <div class="flex flex-col gap-4 bg-white p-8 rounded-lg max-w-[500px]">
-    <AutoComplete
-      :label="'Async auto complete'"
-      :source="countries"
-      :selectedArr="selectedCountriesAsync"
-      :toggleFromList="toggleCountriesAsync"
-      :isAsync="true"
-      placeholder="Type to begin searching"
-      :isDisabled="false"
-    >
-      <template #list-component="{ source, isActive, isHighlighted }">
-        <ListComponent
-          :source="source"
-          :toggleFromList="toggleCountriesAsync"
-          :isActive="isActive"
-          :isHighlighted="isHighlighted"
-        />
-      </template>
-    </AutoComplete>
-    <AutoComplete
-      :label="'Sync auto complete'"
-      :source="countries"
-      :selectedArr="selectedCountries"
-      :toggleFromList="toggleCountries"
-      :isAsync="false"
-      placeholder="Type to begin searching"
-      :isDisabled="false"
-    >
-      <template #list-component="{ source, isActive, isHighlighted }">
-        <ListComponent
-          :source="source"
-          :toggleFromList="toggleCountries"
-          :isActive="isActive"
-          :isHighlighted="isHighlighted"
-        />
-      </template>
-    </AutoComplete>
+  <div class="flex w-screen bg-lightGrey min-h-screen min-w-full items-center justify-center m-0 p-0 overflow-hidden">
+    <div class="flex flex-col gap-4 p-8 rounded-lg bg-white">
+      <AutoComplete
+        :label="'Async auto complete'"
+        :source="countries"
+        :selectedArr="selectedCountriesAsync"
+        :toggleFromList="toggleCountriesAsync"
+        :isAsync="true"
+        placeholder="Type to begin searching"
+        :isDisabled="false"
+      >
+        <template #list-component="{ source, isActive, isHighlighted }">
+          <ListComponent
+            :source="source"
+            :toggleFromList="toggleCountriesAsync"
+            :isActive="isActive"
+            :isHighlighted="isHighlighted"
+          />
+        </template>
+      </AutoComplete>
+      <AutoComplete
+        :label="'Sync auto complete'"
+        :source="countries"
+        :selectedArr="selectedCountries"
+        :toggleFromList="toggleCountries"
+        :isAsync="false"
+        placeholder="Type to begin searching"
+        :isDisabled="false"
+      >
+        <template #list-component="{ source, isActive, isHighlighted }">
+          <ListComponent
+            :source="source"
+            :toggleFromList="toggleCountries"
+            :isActive="isActive"
+            :isHighlighted="isHighlighted"
+          />
+        </template>
+      </AutoComplete>
+    </div>
   </div>
 </template>
