@@ -1,6 +1,6 @@
 # autocomplete-frontend
 
-This project is a simple frontend for the autocomplete component, built with Vue.js.
+This project is a simple frontend for the autocomplete component, built with Vue.js. Try out the component [here](https://vue-autocomplete-kurtyjlee.vercel.app/).
 
 ## Project Setup
 
